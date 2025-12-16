@@ -83,7 +83,7 @@ public class Runigram {
 	public static Color[][] flippedHorizontally(Color[][] image) {
         int N = image.length;
         int M = image[0].length;
-        Color[][] newImage = new Color[M][N];
+        Color[][] newImage = new Color[N][M];
 
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
@@ -100,7 +100,7 @@ public class Runigram {
     public static Color[][] flippedVertically(Color[][] image) {
         int N = image.length;
         int M = image[0].length;
-        Color[][] newImage2 = new Color[M][N];
+        Color[][] newImage2 = new Color[N][M];
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
                 newImage2[i][j] = image[N - 1 - i][j];
