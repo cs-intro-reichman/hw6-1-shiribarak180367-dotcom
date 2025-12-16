@@ -87,7 +87,7 @@ public class Runigram {
 
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
-                newImage[i][j] = image[i][N - 1 - j];
+                newImage[i][j] = image[i][M - 1 - j];
             }
         }
         return newImage;
@@ -103,7 +103,7 @@ public class Runigram {
         Color[][] newImage2 = new Color[M][N];
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
-                newImage2[i][j] = image[M - 1 - i][j];
+                newImage2[i][j] = image[N - 1 - i][j];
             }
         }
 
